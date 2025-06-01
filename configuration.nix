@@ -54,7 +54,7 @@
   services.xserver.displayManager.lightdm.greeters.gtk.theme.name = "Adwaita-dark";
   services.xserver.desktopManager.xfce.enable = true;
 
-  # Enable mounting i think
+  # Display the system partitions
   services.gvfs.enable = true;
 
   # Configure keymap in X11
