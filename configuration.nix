@@ -98,9 +98,6 @@
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "dodo";
 
-  # Install firefox.
-  programs.firefox.enable = false;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -113,15 +110,15 @@
   xfce.xfce4-clipman-plugin
   xfce.xfce4-xkb-plugin
   xfce.xfce4-weather-plugin
-  mint-y-icons
   google-chrome
-  fastfetch
   git
   gtk-engine-murrine
   sassc
   file-roller
+  nixos-icons
   ];
   
+# Enable some thunar plugins
 programs.thunar.plugins = with pkgs.xfce; [
  thunar-archive-plugin 
  thunar-volman 
@@ -132,6 +129,8 @@ programs.thunar.plugins = with pkgs.xfce; [
 programs.appimage.enable = true;
 programs.appimage.binfmt = true;
 
+# Enable Local bin support
+environment.localBinInPath = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -149,6 +148,7 @@ programs.appimage.binfmt = true;
   # Enable flatpaks
   services.flatpak.enable = true;
 
+  # Make GTK apps respect system preferences
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   xdg.portal.config.common.default = "gtk";
