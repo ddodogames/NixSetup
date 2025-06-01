@@ -115,6 +115,7 @@
   gtk-engine-murrine
   sassc
   file-roller
+  gnome-disk-utility
   nixos-icons
   ];
   
