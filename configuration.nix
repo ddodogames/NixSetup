@@ -51,6 +51,7 @@
 
   # Enable the XFCE Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.displayManager.lightdm.greeters.gtk.theme.name = "Adwaita-dark";
   services.xserver.desktopManager.xfce.enable = true;
 
   # Enable mounting i think
