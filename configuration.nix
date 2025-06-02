@@ -125,9 +125,10 @@ programs.thunar.plugins = with pkgs.xfce; [
  thunar-media-tags-plugin 
 ];
 
-# Enable AppImage support
+# Enable AppImage and (some) Linux binaries support
 programs.appimage.enable = true;
 programs.appimage.binfmt = true;
+programs.nix-ld.enable = true;
 
 # Enable Local bin support
 environment.localBinInPath = true;
