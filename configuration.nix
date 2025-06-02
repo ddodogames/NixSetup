@@ -108,7 +108,6 @@
   xfce.xfce4-panel-profiles
   xfce.xfce4-whiskermenu-plugin
   xfce.xfce4-clipman-plugin
-  xfce.xfce4-xkb-plugin
   xfce.xfce4-weather-plugin
   google-chrome
   git
@@ -132,6 +131,12 @@ programs.appimage.binfmt = true;
 
 # Enable Local bin support
 environment.localBinInPath = true;
+
+i18n.inputMethod = {
+enable = true;
+type = "ibus";
+ibus.engines = pkgs.ibus-engines; [ uniemoji ];
+}
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
