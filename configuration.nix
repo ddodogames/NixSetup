@@ -136,8 +136,8 @@ environment.localBinInPath = true;
 i18n.inputMethod = {
 enable = true;
 type = "ibus";
-ibus.engines = pkgs.ibus-engines.uniemoji;
-}
+ibus.engines = with pkgs.ibus-engines; [ uniemoji ];
+};
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
