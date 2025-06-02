@@ -132,6 +132,7 @@ programs.appimage.binfmt = true;
 # Enable Local bin support
 environment.localBinInPath = true;
 
+# Enable ibus
 i18n.inputMethod = {
 enable = true;
 type = "ibus";
