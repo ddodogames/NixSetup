@@ -1,5 +1,5 @@
 # NixSetup
-Config file of my NixOS setup. Nothing fancy about it.
+Config file of my NixOS setup for my old laptop. Nothing fancy about it.
 
 ## What does it include?
 Nothing much but here it is anyways:
