@@ -108,6 +108,7 @@
   xfce.xfce4-panel-profiles
   xfce.xfce4-whiskermenu-plugin
   xfce.xfce4-clipman-plugin
+  xfce.xfce4-notes-plugin
   xfce.xfce4-weather-plugin
   google-chrome
   git
