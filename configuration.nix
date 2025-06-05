@@ -92,9 +92,6 @@
     isNormalUser = true;
     description = "dodo";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    #  thunderbird
-    ];
   };
 
   # Enable automatic login for the user.
