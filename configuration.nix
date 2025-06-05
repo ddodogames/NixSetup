@@ -50,7 +50,10 @@
 
   # Enable the XFCE Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.displayManager.lightdm.greeters.gtk.theme.name = "Adwaita-dark";
+  services.xserver.displayManager.lightdm.greeters.gtk = {
+  theme.name = "Adwaita-dark";
+  clock-format = "%A, %I:%M %p";
+  };
   services.xserver.desktopManager.xfce.enable = true;
 
   # Display the system partitions
