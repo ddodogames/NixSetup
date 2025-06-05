@@ -11,9 +11,12 @@
     ];
 
   # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/sdc";
-  boot.loader.grub.useOSProber = true;
+  boot.loader.grub = {
+  enable = true;
+  device = "/dev/sdc";
+  configurationLimit = 6;
+  useOSProber = true;
+  };
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
