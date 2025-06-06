@@ -51,7 +51,7 @@
   # Enable the XFCE Desktop Environment.
   services.xserver.displayManager.lightdm = { 
   enable = true;
-  background = "./wallpapers/nix-wallpaper-nineish-catppuccin-latte.png";
+  background = ./wallpapers/nix-wallpaper-nineish-catppuccin-latte.png;
   greeters.gtk = {
   theme.name = "Adwaita-dark";
   clock-format = "%A, %I:%M %p";
