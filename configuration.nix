@@ -49,11 +49,14 @@
   services.xserver.enable = true;
 
   # Enable the XFCE Desktop Environment.
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.displayManager.lightdm.greeters.gtk = {
+  services.xserver.displayManager.lightdm = { 
+  enable = true;
+  background = "./wallpapers/nix-wallpaper-nineish-catppuccin-latte.png";
+  greeters.gtk = {
   theme.name = "Adwaita-dark";
   clock-format = "%A, %I:%M %p";
   };
+ };
   services.xserver.desktopManager.xfce.enable = true;
 
   # Display the system partitions
