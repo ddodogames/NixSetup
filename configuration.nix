@@ -148,12 +148,6 @@ ibus.engines = with pkgs.ibus-engines; [ uniemoji ];
 
   # List services that you want to enable:
 
-  # Enable plymouth boot screen
-  boot.plymouth = {
-  enable = true;
-  theme = "bgrt";
- };
-  
   # Enable flatpaks
   services.flatpak.enable = true;
 
