@@ -13,7 +13,7 @@
   # Bootloader.
   boot.loader.grub = {
   enable = true;
-  device = "/dev/sdc";
+  device = "/dev/sda";
   configurationLimit = 6;
   useOSProber = true;
   };
@@ -116,7 +116,6 @@
   sassc
   file-roller
   gnome-disk-utility
-  nps
   ];
   
 # Enable some thunar plugins
