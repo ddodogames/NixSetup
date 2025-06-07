@@ -116,7 +116,6 @@
   sassc
   file-roller
   gnome-disk-utility
-  nixos-icons
   ];
   
 # Enable some thunar plugins
