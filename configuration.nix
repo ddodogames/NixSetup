@@ -116,6 +116,7 @@
   sassc
   file-roller
   gnome-disk-utility
+  nps
   ];
   
 # Enable some thunar plugins
