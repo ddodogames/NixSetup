@@ -16,4 +16,5 @@ Nothing much but here it is anyways:
 | **File manager**            | Thunar                      |
 | **Browser**                 | Google Chrome               |
 | **Package manager**         | Nix pkgs and Flatpaks       | 
+| **AppImage support**        | Enabled                     |
 | **Terminal**                | Xfce terminal app           | 
