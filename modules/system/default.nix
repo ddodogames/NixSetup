@@ -5,7 +5,7 @@
     [ # Import all modules related to system.
       ./grub.nix
       ./users.nix
-      ./graphic-interface.nix
+      ./graphical-interface.nix
       ./networking.nix
       ./locale.nix
       ./pipewire.nix
