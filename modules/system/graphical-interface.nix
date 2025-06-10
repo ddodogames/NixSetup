@@ -26,7 +26,4 @@
   # Display the system partitions
   services.gvfs.enable = true;
 
-
-
-
 }
