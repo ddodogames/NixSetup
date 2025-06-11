@@ -6,7 +6,6 @@
 networking = {
 hostName = "mylaptop";
 networkmanager.enable = true;
-wireless.enable = true;
 };
 
 }
