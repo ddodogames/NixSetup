@@ -9,6 +9,7 @@
       ./networking.nix
       ./locale.nix
       ./pipewire.nix
+      ./services-and-other.nix
       ./programs.nix
     ];
 

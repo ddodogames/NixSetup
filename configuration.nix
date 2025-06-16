@@ -9,17 +9,13 @@
     [ # get hardware config and modules connected.
       ./hardware-configuration.nix
       ./modules/system/default.nix
+      ./modules/terminal/default.nix
     ];
 
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  # Enable Nix command
- nix.settings.experimental-features = [ "nix-command" ];
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -30,18 +26,14 @@
   xfce.xfce4-clipman-plugin
   xfce.xfce4-notes-plugin
   xfce.xfce4-weather-plugin
+  menulibre
   google-chrome
-  git
   gtk-engine-murrine
   sassc
   file-roller
   gnome-disk-utility
   ];
   
-
-# Enable Local bin support
-environment.localBinInPath = true;
-
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

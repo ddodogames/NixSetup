@@ -18,3 +18,4 @@ Nothing much but here it is anyways:
 | **Package manager**         | Nix pkgs and Flatpaks       | 
 | **AppImage support**        | Enabled                     |
 | **Terminal**                | Xfce terminal app           | 
+| **Prompt**                  | Starship                    |

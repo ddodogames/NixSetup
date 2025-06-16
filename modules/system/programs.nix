@@ -16,16 +16,5 @@ binfmt = true;
 nix-ld.enable = true;
 };
 
-# Enable flatpaks
-services.flatpak.enable = true;
-
-
-# Make GTK apps respect system preferences
- xdg.portal = {
- enable = true;
- extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
- config.common.default = "gtk";
-};
-
 
 }

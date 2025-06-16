@@ -2,7 +2,7 @@
 
 {
 
-# Enable the X11 windowing system.
+  # Enable the X11 windowing system.
   services.xserver.enable = true;
 
   # Enable the XFCE Desktop Environment.
@@ -23,7 +23,5 @@
  thunar-media-tags-plugin
 ];
 
-  # Display the system partitions
-  services.gvfs.enable = true;
 
 }
