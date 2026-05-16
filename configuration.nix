@@ -9,31 +9,34 @@
     [ # get hardware config and modules connected.
       ./hardware-configuration.nix
       ./modules/system/default.nix
+      ./modules/programs/default.nix
       ./modules/terminal/default.nix
     ];
-
-
-  # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
 
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
   wget
+  wineWow64Packages.stableFull
   xfce.xfce4-panel-profiles
   xfce.xfce4-whiskermenu-plugin
   xfce.xfce4-clipman-plugin
-  xfce.xfce4-notes-plugin
-  xfce.xfce4-weather-plugin
+  xfce.xfce4-xkb-plugin
   menulibre
-  google-chrome
-  gtk-engine-murrine
   sassc
-  file-roller
+  xarchiver
+  fastfetch
+  mint-y-icons
   gnome-disk-utility
+  bleachbit
   ];
   
+ fonts.packages = with pkgs; [
+  noto-fonts
+  noto-fonts-cjk-sans
+  noto-fonts-color-emoji
+];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

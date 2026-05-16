@@ -24,14 +24,7 @@
 # Configure keymap in X11
 services.xserver.xkb = {
   layout = "us";
-  variant = "";
   };
 
-# Enable ibus
-i18n.inputMethod = {
-  enable = true;
-  type = "ibus";
-  ibus.engines = with pkgs.ibus-engines; [ uniemoji ];
- };
 
 }

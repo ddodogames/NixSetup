@@ -1,0 +1,43 @@
+{ config, pkgs, ... }:
+
+{
+
+# Use 6.18 LTS kernel.
+boot.kernelPackages = pkgs.linuxKernel.packages.linux_6_18;
+
+# Bootloader.
+boot.loader.grub = {
+enable = true;
+device = "/dev/sdb";
+configurationLimit = 10;
+splashImage = null;
+useOSProber = false;
+extraEntries = "
+menuentry 'System shutdown' {
+	echo 'System shutting down...'
+	halt
+}
+
+menuentry 'System restart' {
+	echo 'System rebooting...'
+	reboot
+}
+";
+};
+
+# Plymouth
+boot.plymouth = {
+enable = true;
+theme = "spinner";
+logo = ../../images/boot/nixos-white.png;
+};
+
+# Kernel Params and ensure Plymouth loads correctly
+boot.kernelParams = [
+      "quiet"
+      "splash"
+];
+boot.initrd.kernelModules = [ "i915" ];
+boot.initrd.systemd.enable = true;
+
+}
