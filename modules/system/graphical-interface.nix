@@ -5,7 +5,14 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable the Xfce Desktop Environment.
+  # Enable the Xfce Desktop Environment + lightdm.
+  services.xserver.desktopManager.xfce = {
+  enable = true;
+  enableWaylandSession = false;
+  };
+
+  programs.xfconf.enable = true;
+
   services.xserver.displayManager.lightdm = {
   enable = true;
   background = ../../images/lightdm/nix-wallpaper-nineish.png;
@@ -16,12 +23,6 @@
   };
  };
 
-  services.xserver.desktopManager.xfce = {
-  enable = true;
-  enableWaylandSession = false;
-  };
-
-  programs.xfconf.enable = true;
 
   # Enable Thunar with some plugins.
  programs.thunar = {

@@ -2,7 +2,7 @@
 
 {
 
-# Enable AppImage and (some) Linux binaries support
+# Enable AppImages
 programs = {
 
 appimage = {
@@ -10,7 +10,6 @@ enable = true;
 binfmt = true;
 };
 
-nix-ld.enable = true;
 };
 
 

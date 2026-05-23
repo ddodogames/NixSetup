@@ -30,6 +30,7 @@
   mint-y-icons
   gnome-disk-utility
   bleachbit
+  distrobox
   ];
   
   fonts.packages = with pkgs; [
