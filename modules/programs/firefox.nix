@@ -26,7 +26,7 @@ preferences = {
 "browser.download.always_ask_before_handling_new_types" = true;
 # Disable annoying stuff like sponsored part
 "browser.aboutConfig.showWarning" = false;
-"general.smoothScroll" = false; # I usually don't need this enabled.
+"general.smoothScroll" = false; # I don't want this enabled.
 "browser.preferences.moreFromMozilla" = false;
 "browser.aboutwelcome.enabled" = false;
 "browser.startup.homepage_override.mstone" = "ignore";
