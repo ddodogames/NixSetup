@@ -7,7 +7,7 @@ programs.firefox = {
 package = pkgs.firefox-esr;
 enable = true;
 policies = {
-"DisableFirefoxStudies" = false;
+"DisableFirefoxStudies" = true;
 "HardwareAcceleration" = false;
 "OfferToSaveLoginsDefault" = false;
 };
