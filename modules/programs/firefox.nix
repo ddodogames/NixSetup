@@ -9,7 +9,7 @@ enable = true;
 policies = {
 "DisableFirefoxStudies" = false;
 "HardwareAcceleration" = false;
-"OfferToSaveLogins" = true;
+"OfferToSaveLoginsDefault" = false;
 };
 preferences = {
 # Allow CSS theming
