@@ -6,6 +6,11 @@
 programs.firefox = {
 package = pkgs.firefox-esr;
 enable = true;
+policies = {
+"DisableFirefoxStudies" = false;
+"HardwareAcceleration" = false;
+"OfferToSaveLogins" = true;
+};
 preferences = {
 # Allow CSS theming
 "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
