@@ -7,6 +7,7 @@
       ./users.nix
       ./graphical-interface.nix
       ./networking.nix
+      ./bluetooth.nix
       ./locale.nix
       ./pipewire.nix
       ./services-and-other.nix
