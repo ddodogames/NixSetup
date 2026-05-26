@@ -19,10 +19,10 @@
   environment.systemPackages = with pkgs; [
   wget
   wineWow64Packages.stableFull
-  xfce.xfce4-panel-profiles
-  xfce.xfce4-whiskermenu-plugin
-  xfce.xfce4-clipman-plugin
-  xfce.xfce4-xkb-plugin
+  xfce4-panel-profiles
+  xfce4-whiskermenu-plugin
+  xfce4-clipman-plugin
+  xfce4-xkb-plugin
   menulibre
   sassc
   xarchiver
