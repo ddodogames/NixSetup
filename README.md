@@ -8,5 +8,5 @@ A work on the "revamped" version started after looking at [wyattgill9's nix conf
 
 Unfortunately, at some point, my old crappy HP laptop whose config was designed for had died in July 2025 which made the setup useless. I eventually got a laptop (still old as well, though) around the same time later but i did not return to NixOS stuff until now for the sake of testing it.
 
-Unlike the previous version of this config, this setup is intentionally designed to be minimal for the Samsung laptop (that is, core system stuff are configured and all important apps are installed through flatpaks & appimages with the exception of Firefox).
+Unlike the previous version of this config, this setup is intentionally designed to be minimal for the Samsung laptop (i.e. core system stuff are configured and all important apps are installed through flatpaks, appimages and distrobox containers with the exception of Firefox).
 

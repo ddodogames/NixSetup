@@ -2,15 +2,14 @@
 
 {
 
-# Enable AppImages
-programs = {
+  # Enable AppImages
+  programs = {
 
-appimage = {
-enable = true;
-binfmt = true;
-};
+    appimage = {
+      enable = true;
+      binfmt = true;
+    };
 
-};
-
+  };
 
 }

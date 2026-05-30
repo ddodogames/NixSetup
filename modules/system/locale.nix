@@ -2,10 +2,10 @@
 
 {
 
-# Set your time zone.
+  # Set your time zone.
   time.timeZone = "Africa/Cairo";
 
-# Select internationalisation properties.
+  # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
   i18n.extraLocaleSettings = {
@@ -20,11 +20,9 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-
-# Configure keymap in X11
-services.xserver.xkb = {
-  layout = "us";
+  # Configure keymap in X11
+  services.xserver.xkb = {
+    layout = "us";
   };
-
 
 }

@@ -2,14 +2,13 @@
 # Currently unused for now
 
 let
-  nix-alien-pkgs = import (
-    builtins.fetchTarball "https://github.com/thiagokokada/nix-alien/tarball/master"
-  ) { };
+  nix-alien-pkgs =
+    import (builtins.fetchTarball "https://github.com/thiagokokada/nix-alien/tarball/master")
+      { };
 in
 {
   environment.systemPackages = with nix-alien-pkgs; [
     nix-alien
   ];
-
 
 }

@@ -2,7 +2,7 @@
 
 {
 
-services.pipewire = {
+  services.pipewire = {
     enable = true;
     wireplumber.enable = true;
     alsa.enable = true;

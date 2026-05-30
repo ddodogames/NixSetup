@@ -3,9 +3,9 @@
 # Networking part
 {
 
-networking = {
-hostName = "mynix";
-networkmanager.enable = true;
-};
+  networking = {
+    hostName = "mynix";
+    networkmanager.enable = true;
+  };
 
 }
