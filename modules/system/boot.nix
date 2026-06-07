@@ -8,7 +8,7 @@
   # Bootloader.
   boot.loader.grub = {
     enable = true;
-    device = "/dev/sdb";
+    device = "/dev/sda";
     configurationName = "NixOS 26.05";
     configurationLimit = 15;
     splashImage = null;

@@ -24,6 +24,7 @@
     xfce4-xkb-plugin
     menulibre
     sassc
+    gh
     nixfmt
     xarchiver
     fastfetch
@@ -39,6 +40,7 @@
     noto-fonts-color-emoji
     open-sans
     liberation_ttf
+    dejavu_fonts
   ];
 
   # This value determines the NixOS release from which the default

@@ -4,7 +4,7 @@
 {
 
   networking = {
-    hostName = "mynix";
+    hostName = "mylaptop";
     networkmanager.enable = true;
   };
 
