@@ -11,9 +11,6 @@
   # Enable Nix command
   nix.settings.experimental-features = [ "nix-command" ];
 
-  # Enable Local bin support
-  environment.localBinInPath = true;
-
   # Enable flatpaks
   services.flatpak.enable = true;
 
