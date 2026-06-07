@@ -32,6 +32,7 @@
       "browser.aboutConfig.showWarning" = false;
       "general.smoothScroll" = false;
       "layers.acceleration.disabled" = true;
+      "gfx.webrender.all" = false; # Always disabled by default in all of my installations
       "browser.preferences.defaultPerformanceSettings.enabled" = false;
       "browser.preferences.moreFromMozilla" = false;
       "browser.aboutwelcome.enabled" = false;
@@ -45,6 +46,8 @@
       "layout.word_select.eat_space_to_next_word" = false;
       # Unload tabs on low memory
       "browser.tabs.unloadOnLowMemory" = true;
+      "browser.low_commit_space_threshold_percent" = 100;
+      "browser.tabs.min_inactive_duration_before_unload" = 3600000;
     };
   };
 
