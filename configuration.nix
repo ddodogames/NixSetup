@@ -25,6 +25,7 @@
     menulibre
     sassc
     gh
+    fnm
     nixfmt
     xarchiver
     fastfetch
