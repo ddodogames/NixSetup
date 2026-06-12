@@ -17,6 +17,9 @@
   # Install Blueman to manage bluetooth via GUI
   services.blueman.enable = true;
 
+  # Enable Tumbler for thumbnails
+  services.tumbler.enable = true;
+
   # Make GTK apps respect system preferences
   xdg.portal = {
     enable = true;
