@@ -36,12 +36,15 @@
   ];
 
   fonts.packages = with pkgs; [
+    dejavu_fonts
+    freefont_ttf
+    gyre-fonts
+    liberation_ttf
+    unifont
     noto-fonts
     noto-fonts-cjk-sans
+    noto-fonts-cjk-serif
     noto-fonts-color-emoji
-    open-sans
-    liberation_ttf
-    dejavu_fonts
   ];
 
   # This value determines the NixOS release from which the default
