@@ -27,7 +27,7 @@
     gh
     fnm
     nixfmt
-    xarchiver
+    file-roller
     fastfetch
     mint-y-icons
     gnome-disk-utility
