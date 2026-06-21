@@ -1,11 +1,17 @@
 { config, pkgs, ... }:
 
+
 {
 
-  # Install Firefox ESR and configure it a bit
+nixpkgs.overlays = [
+  (import (builtins.fetchTarball "https://github.com/mozilla/nixpkgs-mozilla/archive/master.tar.gz"))
+];
+
+  # Install Firefox Beta and configure it a bit
   programs.firefox = {
-    package = pkgs.firefox-esr;
+    package = pkgs.latest.firefox-beta-bin;
     enable = true;
+    nativeMessagingHosts.packages = [ pkgs.firefoxpwa ];
     policies = {
       "DisableFirefoxStudies" = true;
       "OfferToSaveLoginsDefault" = false;
@@ -14,16 +20,27 @@
       # Allow CSS theming
       "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
       "svg.context-properties.content.enabled" = true;
+      # Enable Nova redesign
+      "browser.nova.enabled" = true;
+      "browser.newtabpage.activity-stream.nova.enabled" = true;
+      "browser.urlbar.quicksuggest.ampTopPickUseNovaIconSize" = true;
+      "browser.compactmode.show" = true;
       # Disable AI features
       "browser.ml.chat.enabled" = false;
       "browser.ml.chat.sidebar" = false;
       "browser.ml.enable" = false;
       "browser.tabs.groups.smart.enabled" = false;
       "browser.tabs.groups.smart.userEnabled" = false;
-      # Enable profiles
-      "browser.profiles.enabled" = true;
+      "browser.ai.control.default" = "blocked";
+      "browser.ai.control.linkPreviewKeyPoints" = "blocked";
+      "browser.ai.control.pdfjsAltText" = "blocked";
+      "browser.ai.control.sidebarChatbot" = "blocked";
+      "browser.ai.control.smartTabGroups" = "blocked";
+      "browser.ai.control.smartWindow" = "blocked";
+      "browser.ai.control.translations" = "blocked";
       # Do not trim URLs
       "browser.urlbar.trimURLs" = false;
+      "browser.urlbar.trimHttps" = false;
       # Configure the download behavior
       "browser.download.useDownloadDir" = false;
       "browser.download.manager.addToRecentDocs" = false;
@@ -36,7 +53,6 @@
       "browser.preferences.defaultPerformanceSettings.enabled" = false;
       "browser.preferences.moreFromMozilla" = false;
       "browser.aboutwelcome.enabled" = false;
-      "browser.startup.homepage_override.mstone" = "ignore";
       "extensions.getAddons.showPane" = false;
       "extensions.htmlaboutaddons.recommendations.enabled" = false;
       "browser.newtabpage.activity-stream.showSponsored" = false;
@@ -44,7 +60,8 @@
       "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;
       "browser.shell.checkDefaultBrowser" = false;
       "layout.word_select.eat_space_to_next_word" = false;
-      # Unload tabs on low memory
+      "browser.settings-redesign.promo.dismissed" = true;
+      # Unload tabs on low memory after one hour of inactivity
       "browser.tabs.unloadOnLowMemory" = true;
       "browser.low_commit_space_threshold_percent" = 100;
       "browser.tabs.min_inactive_duration_before_unload" = 3600000;

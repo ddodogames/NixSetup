@@ -27,14 +27,21 @@
     gh
     fnm
     nixfmt
+    firefoxpwa
     file-roller
     fastfetch
     mint-y-icons
     gnome-disk-utility
     bleachbit
     distrobox
+    gdk-pixbuf
+    librsvg
   ];
 
+# Allow unfree packages
+nixpkgs.config.allowUnfree = true;
+
+ # Fonts
   fonts.packages = with pkgs; [
     dejavu_fonts
     freefont_ttf
