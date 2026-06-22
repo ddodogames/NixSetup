@@ -45,6 +45,8 @@ nixpkgs.overlays = [
       "browser.download.useDownloadDir" = false;
       "browser.download.manager.addToRecentDocs" = false;
       "browser.download.always_ask_before_handling_new_types" = true;
+      # Allow viewing image information
+      "browser.menu.showViewImageInfo" = true;
       # Disable annoying stuff like sponsored part (and others that i don't want)
       "browser.aboutConfig.showWarning" = false;
       "general.smoothScroll" = false;
